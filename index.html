@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Invoice</title>
+</head>
+
+<body>
+  <header>
+    <h1>ALRAYYAN OPTICS</h1>
+  </header>
+  <div class="tarhib">
+    <h2 lang="ar">مرحبا بكم في نظارات الريان</h2>
+    <h2>Welcome to Alrayyan Optics</h2>
+  </div>
+  <div class="talab">
+    <div id="done" class="done haid">
+      <img src="done.jpg" alt="">
+      <h2>Your Order Send Already <br> تم ارسال الطلب بنجاح</h2>
+      <button id="home">Home الصفحه الرئيسيه</button>
+    </div>
+    <!-- ---------------------------------------- -->
+    <div id="alhsab" class="alhsab haid">
+      <p><input type="text" placeholder="Invoice Number"></p>
+      <div style="display: flex; align-items: center;">
+        <p>Frame Price After DIC : </p>
+        <p style="margin: 0 4px;" id="afterDic"></p>
+        <p> سعر الايطار بعد الخصم</p>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <p>Lenses Price : </p>
+        <p style="margin: 0 4px;" id="lensPrice"></p>
+        <p> سعر العدسات</p>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <p>Lense Coating : </p>
+        <p style="margin: 0 4px;" id="lens3Price"></p>
+        <p>انواع الطبقات   </p>
+      </div>
+      <hr>
+      <div style="display: flex; align-items: center;">
+        <p>Total : </p>
+        <p style="margin-left: 4px;" id="total2"></p>
+      </div><br>
+      <button id="back">Back رجوع</button>
+      <button id="send">Send Order ارسال الطلب</button>
+    </div>
+    <!-- ---------------------------------------- -->
+    <div id="invoice" class="invoice ">
+      <h3>Invoice الفاتوره</h3>
+      <h4> Frame Price <input id="fprice" type="number"> سعر ايطار النظاره</h4>
+      <h4>Choose Lenses
+        <select name="" id="lPrice">
+          <option value="0">R-Eye اليمين</option>
+          <option value="35">Pl-Normal</option>
+          <option value="50">Hi.Power-Normal</option>
+          <option value="60">Pl-ARC</option>
+          <option value="100">Hi.Power-ARC</option>
+          <option value="175">Poly ARC</option>
+          <option value="100">Pl-1.61 ARC</option>
+          <option value="175">Rx-1.61 ARC</option>
+          <option value="225">Pl-1.67 ARC</option>
+          <option value="525">Pl-1.74 ARC</option>
+          <option value="125">Pl-E-PRO</option>
+          <option value="185">Pl-Prevencia</option>
+          <option value="210">Pl-Trans T-Classic</option>
+          <option value="110">Pl-Tech Blue UV</option>
+          <option value="70">Pl-D-Bifocal Normal</option>
+          <option value="120">Pl-D-Bifocal ARC</option>
+          <option value="275">Pl-D-Bifocal trans</option>
+          <option value="65">Pl-Color</option>
+          <option value="175">Pl-1.61 Color</option>
+          <option value="225">Pl-1.67 Color</option>
+          <option value="35">White Glass</option>
+          <option value="75">Hi.Por White Glass</option>
+          <option value="60">PGX Glass </option>
+          <option value="110">Hi.Por PGX Glass</option>
+          <option value="335">Trans Saphire HR</option>
+          <option value="145"> Saphire UV HR</option>
+        </select>
+        <select name="" id="lPrice2">
+          <option value="0">L-Eye اليسار</option>
+          <option value="35">Pl-Normal</option>
+          <option value="50">Hi.Power-Normal</option>
+          <option value="60">Pl-ARC</option>
+          <option value="100">Hi.Power-ARC</option>
+          <option value="175">Poly ARC</option>
+          <option value="100">Pl-1.61 ARC</option>
+          <option value="175">Rx-1.61 ARC</option>
+          <option value="225">Pl-1.67 ARC</option>
+          <option value="525">Pl-1.74 ARC</option>
+          <option value="125">Pl-E-PRO</option>
+          <option value="185">Pl-Prevencia</option>
+          <option value="210">Pl-Trans T-Classic</option>
+          <option value="110">Pl-Tech Blue UV</option>
+          <option value="70">Pl-D-Bifocal Normal</option>
+          <option value="120">Pl-D-Bifocal ARC</option>
+          <option value="275">Pl-D-Bifocal trans</option>
+          <option value="65">Pl-Color</option>
+          <option value="175">Pl-1.61 Color</option>
+          <option value="225">Pl-1.67 Color</option>
+          <option value="35">White Glass</option>
+          <option value="75">Hi.Por White Glass</option>
+          <option value="60">PGX Glass </option>
+          <option value="110">Hi.Por PGX Glass</option>
+          <option value="335">Trans Saphire HR</option>
+          <option value="145"> Saphire UV HR</option>
+
+        </select>
+        اختار العدسات
+      </h4>
+      <h4>
+        Lense Coating
+        <select name="" id="lPrice3">
+          <option value="0"></option>
+          <option value="100">Crizal E-PRO</option>
+          <option value="200">Crizal Prevencia</option>
+          <option value="200">Crizal Sapphire</option>
+          <option value="200">Crizal Drive</option>
+        </select>
+        انواع الطبقات
+      </h4>
+      <button onclick="" id="btncalc" type="">Calculate The Order احسب الطلب</button>
+
+    </div>
+  </div>
+  <footer>
+    <h3>
+      Thank You And Come Again <br>
+      نتشرف بخدمتكم زرونا مره اخري
+    </h3>
+    <div class="footer">
+      &copy; 2022 <span> <a href="https://wa.me/97466945713">khaled</a> </span>All Right Reserved
+    </div>
+  </footer>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+*{
+  text-align: center;
+}
+
+header{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  background-color: gold;
+}
+.tarhib{
+  margin-top: 30px;
+  border-bottom: 3px rgb(192, 189, 189) solid;
+}
+.talab{
+  background-color: rgb(226, 220, 211);
+  width: 490px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 370px;
+  padding-top: 30px;
+  border: 2px solid black;
+}
+.talab .invoice{
+  padding: 10px;
+}
+
+h3{
+  border-bottom: 3px rgb(192, 189, 189) solid;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+button{
+  margin-top: 25px;
+}
+.haid{
+  display: none;
+}
+.alhsab #back{
+  text-decoration: none;
+  border: 2px solid black;
+  color: black;background-color: rgba(255, 0, 0, 0.684);
+  padding: 0 3px;
+}
+.done h2{
+  font-size: 25px;
+}
+.done img{
+  border-radius: 50%;
+  width: 100px;
+}
+.alhsab{
+  margin-top: 10px;
+  padding: 5px;
+}
+.footer{
+  margin: 40px 0 20px;
+}
+.footer a{
+  text-decoration: none;
+  color: rgb(0, 145, 255);
+  transition: 1s;
+}
+.footer a:hover{
+  font-size: 20px;  
+}
+button{
+  cursor: pointer;
+}
+@media(max-width: 500px){
+  h4{
+    display: grid;
+  }
+  .talab{
+    width: 80vw;
+    height: fit-content;
+  }
+  .tarhib{
+    margin-top: -20px;
+    border: none;
+  }
+  .tarhib h2{
+    margin: 0;
+  }
+  .talab{
+    margin: 0 auto;
+  }
+  .invoice{
+    margin-top: -50px;
+  }
+  .invoice h3{
+    margin: 18px auto;
+  }
+  .invoice h4{
+    margin: 5px auto;
+  }
+  .invoice button{
+    margin-top: 10px;
+  }
+}
