@@ -71,7 +71,7 @@ button{
 button{
   cursor: pointer;
 }
-@media(max-width: 630px){
+@media(max-width: 645px){
   h4{
     display: grid;
   }
