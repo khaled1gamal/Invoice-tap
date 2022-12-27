@@ -1,19 +1,21 @@
-*{
+* {
   text-align: center;
 }
 
-header{
+header {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
   background-color: gold;
 }
-.tarhib{
+
+.tarhib {
   margin-top: 30px;
   border-bottom: 3px rgb(192, 189, 189) solid;
 }
-.talab{
+
+.talab {
   background-color: rgb(226, 220, 211);
   width: 490px;
   margin: 20px auto 0;
@@ -24,81 +26,107 @@ header{
   padding-top: 30px;
   border: 2px solid black;
 }
-.talab .invoice{
+
+.talab .invoice {
   padding: 10px;
 }
 
-h3{
+h3 {
   border-bottom: 3px rgb(192, 189, 189) solid;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
-button{
+
+button {
   margin-top: 25px;
 }
-.haid{
+
+.haid {
   display: none;
 }
-.alhsab #back{
+
+.alhsab #back {
   text-decoration: none;
   border: 2px solid black;
-  color: black;background-color: rgba(255, 0, 0, 0.684);
+  color: black;
+  background-color: rgba(255, 0, 0, 0.684);
   padding: 0 3px;
 }
-.done h2{
+
+.done h2 {
   font-size: 25px;
 }
-.done img{
+
+.done img {
   border-radius: 50%;
   width: 100px;
 }
-.alhsab{
+
+.alhsab {
+  width: fit-content;
   margin-top: 10px;
   padding: 5px;
 }
-.footer{
+.alhsab div{
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer {
   margin: 40px 0 20px;
 }
-.footer a{
+
+.footer a {
   text-decoration: none;
   color: rgb(0, 145, 255);
   transition: 1s;
 }
-.footer a:hover{
-  font-size: 20px;  
+
+.footer a:hover {
+  font-size: 20px;
 }
-button{
+
+button {
   cursor: pointer;
 }
-@media(max-width: 850px){
-  h4{
+
+@media(max-width: 850px) {
+  h4 {
     display: grid;
   }
-  .talab{
+
+  .talab {
     width: 80vw;
     height: fit-content;
   }
-  .tarhib{
+
+  .tarhib {
     margin-top: -20px;
     border: none;
   }
-  .tarhib h2{
+
+  .tarhib h2 {
     margin: 0;
   }
-  .talab{
+
+  .talab {
     margin: 0 auto;
   }
-  .invoice{
+
+  .invoice {
     margin-top: -50px;
   }
-  .invoice h3{
+
+  .invoice h3 {
     margin: 18px auto;
   }
-  .invoice h4{
+
+  .invoice h4 {
     margin: 5px auto;
   }
-  .invoice button{
+
+  .invoice button {
     margin-top: 10px;
   }
 }
