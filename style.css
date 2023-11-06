@@ -130,3 +130,10 @@ button {
     margin-top: 10px;
   }
 }
+
+@media(max-width: 550px){
+   .talab{
+
+    width: 250px;
+   }
+}
