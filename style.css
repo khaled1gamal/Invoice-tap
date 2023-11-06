@@ -131,7 +131,7 @@ button {
   }
 }
 
-@media(max-width: 550px){
+@media(max-width: 850px){
    .talab{
 
     width: 250px;
