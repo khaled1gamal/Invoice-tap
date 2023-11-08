@@ -29,6 +29,11 @@ header {
 
 .talab .invoice {
   padding: 10px;
+  width: 70%;
+}
+.invoice input, .invoice select{
+  font-size: 20px;
+  padding: 8px 0;
 }
 
 h3 {
@@ -92,8 +97,9 @@ button {
 }
 
 @media(max-width: 850px) {
-  h4 {
-    display: grid;
+  h4, h2 {
+    display: flex;
+    flex-direction: column;
   }
 
   .talab {
@@ -131,6 +137,3 @@ button {
   }
 }
 
-@media(max-width: 1550px){
-   
-}
