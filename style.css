@@ -10,6 +10,10 @@ header {
   background-color: gold;
 }
 
+#total2 {
+  font-size: 23px;
+}
+
 .tarhib {
   margin-top: 30px;
   border-bottom: 3px rgb(192, 189, 189) solid;
@@ -31,9 +35,15 @@ header {
   padding: 10px;
   width: 70%;
 }
-.invoice input, .invoice select{
+
+.invoice input,
+.invoice select {
   font-size: 20px;
   padding: 8px 0;
+}
+
+.invoice button {
+  font-size: 25px;
 }
 
 h3 {
@@ -72,12 +82,15 @@ button {
   width: fit-content;
   margin-top: 10px;
   padding: 5px;
+  font-size: 25px;
 }
-.alhsab div{
+
+.alhsab div {
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
 }
+
 .footer {
   margin: 40px 0 20px;
 }
@@ -96,8 +109,17 @@ button {
   cursor: pointer;
 }
 
+#alhsab>p>input[type=text] {
+  height: 30px;
+  width: 97%;
+  outline: none;
+  font-size: 25px;
+}
+
 @media(max-width: 1650px) {
-  h4, h2 {
+
+  h4,
+  h2 {
     display: flex;
     flex-direction: column;
   }
@@ -137,3 +159,16 @@ button {
   }
 }
 
+@media(max-width: 600px) {
+  .alhsab div {
+    flex-direction: column;
+    margin: 15px auto;
+    background-color: rgb(207 207 207);
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .alhsab div p {
+    margin: 1px 0;
+  }
+}
